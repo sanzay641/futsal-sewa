@@ -1,3 +1,4 @@
+import django_heroku 
 """
 Django settings for futsal project.
 
@@ -9,7 +10,6 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -169,4 +169,6 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'your secret key'
 SOCIAL_AUTH_GITHUB_KEY = 'key'
 SOCIAL_AUTH_GITHUB_SECRET = 'secret key'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+django_heroku.settings(locals())

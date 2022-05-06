@@ -1,2 +1,2 @@
-web: gunicorn futsal.wsgi 
+web: gunicorn myproject.wsgi
 
